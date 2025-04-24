@@ -43,7 +43,7 @@ rest-api-php/
 ### 2. Clonar o projeto
 
 ```bash
-git clone [https://github.com/seuusuario/rest-api-php-postgres.git](https://github.com/GabrielMassara/SafeAPI.git)
+git clone https://github.com/GabrielMassara/SafeAPI.git
 cd rest-api-php-postgres
 ```
 
@@ -200,12 +200,6 @@ Você pode acessar o banco via DBeaver ou PGAdmin:
 
 ---
 
-## 📥 Contribuições
-
-Sinta-se à vontade para sugerir melhorias, abrir PRs e relatar issues.
-
----
-
 ## 🧑‍💻 Autor
 
-Desenvolvido por [Seu Nome] – _open source with ❤️_
+Desenvolvido por Gabriel Evangelista Massara
