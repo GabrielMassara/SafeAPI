@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../controllers/UserController.php';
 require_once __DIR__ . '/../controllers/AuthController.php';
+require_once __DIR__ . '/../controllers/MeController.php';
 require_once __DIR__ . '/../middleware/AuthMiddleware.php';
 
 header("Access-Control-Allow-Origin: *");
@@ -14,6 +15,12 @@ $method = $_SERVER['REQUEST_METHOD'];
 if ($uri[0] === 'api' && $uri[1] === 'login' && $method === 'POST') {
     $auth = new AuthController();
     $auth->login();
+    return;
+}
+
+if ($uri[0] === 'api' && $uri[1] === 'me' && $method === 'GET') {
+    $controller = new MeController();
+    $controller->show();
     return;
 }
 
