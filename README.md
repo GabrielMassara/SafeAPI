@@ -43,7 +43,7 @@ rest-api-php/
 ### 2. Clonar o projeto
 
 ```bash
-git clone https://github.com/seuusuario/rest-api-php-postgres.git
+git clone [https://github.com/seuusuario/rest-api-php-postgres.git](https://github.com/GabrielMassara/SafeAPI.git)
 cd rest-api-php-postgres
 ```
 
