@@ -13,6 +13,7 @@ Este projeto é uma API REST completa desenvolvida em **PHP puro** com **Postgre
 - Docker e Docker Compose
 - DBeaver (sugerido para visualização do banco de dados)
 - PGAdmin (opcional via `phpmyadmin`/`pgadmin4` container)
+- Sessões PHP (`$_SESSION`)
 
 ---
 
@@ -78,6 +79,31 @@ Autentica o usuário e retorna um token JWT.
 ```json
 {
   "token": "eyJhbGciOi..."
+}
+```
+
+### 📤 Logout de Sessão
+
+#### `POST /api/logout`
+Finaliza a sessão PHP do usuário.
+
+**Resposta:**
+```json
+{
+  "message": "Sessão encerrada com sucesso."
+}
+```
+
+### 🔎 Sessão em PHP
+
+Ao fazer login, o backend armazena os dados do usuário em `$_SESSION['user']`.  
+Use `GET /api/me` para acessar:
+
+```json
+{
+  "id": 1,
+  "name": "Admin",
+  "email": "admin@example.com"
 }
 ```
 
