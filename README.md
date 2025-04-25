@@ -45,7 +45,7 @@ rest-api-php/
 
 ```bash
 git clone https://github.com/GabrielMassara/SafeAPI.git
-cd rest-api-php-postgres
+cd SafeAPI
 ```
 
 ### 3. Subir os containers
